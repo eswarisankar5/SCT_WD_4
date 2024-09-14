@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>To Do List</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="frontpage">
+        <div class="background">
+            <img src="to-do front.png" height="700px" width="100%">
+        </div>
+        <div class="heading white">
+            <h1>TO-DO-LIST</h1>
+        </div>
+        <button class="start" role="button">Start</button>
+    </div>
+
+    <div class="ListPage" style="display: none;">
+        <div class="priority-container">
+            <div class="box mr high-priority">
+                <h1 class="pink mt abs">High Priority</h1>
+                <ul id="high-priority" class="task-list"></ul>
+            </div>
+            <div class="box mr medium-priority">
+                <h1 class="abs mt lb">Medium Priority</h1>
+                <ul id="medium-priority" class="task-list"></ul>
+            </div>
+            <div class="box mr low-priority">
+                <h1 class="abs mt green">Low Priority</h1>
+                <ul id="low-priority" class="task-list"></ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

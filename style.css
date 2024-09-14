@@ -1,0 +1,238 @@
+/* Task item styling */
+.task-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+}
+
+.task-text.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.delete-btn {
+    cursor: pointer;
+    margin-left: 10px;
+    color: green;
+}
+
+.delete-btn:hover {
+    color: darkgreen;
+}
+
+/* Global styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #fff9d4;
+}
+
+/* Text color class */
+.white {
+    color: wheat;
+}
+
+/* Flex utility class */
+.flex {
+    display: flex;
+}
+
+/* Font styling */
+.nerko-one-regular {
+    font-family: "Nerko One", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.pixelify-sans-frontpage {
+    font-family: "Pixelify Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Frontpage styling */
+.frontpage {
+    position: relative;
+    text-align: center;
+    display: block;
+}
+
+.background img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.heading {
+    position: absolute;
+    top: 10%;
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 3vw;
+    color: wheat;
+}
+
+/* Button styling */
+.start {
+    background-color: #fbeee0;
+    border: 2px solid #422800;
+    border-radius: 30px;
+    box-shadow: #422800 4px 4px 0 0;
+    color: #422800;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 4vw;
+    padding: 1.5vw 3vw;
+    line-height: 1.5;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    position: absolute;
+    bottom: 40%; /* Adjust position from the bottom */
+    right: 80%;
+    transform: translateX(-50%); /* Center horizontally */
+    font-family: "Nerko One", cursive;
+}
+
+/* Button hover and active states */
+.start:hover {
+    background-color: #fff;
+}
+
+.start:active {
+    box-shadow: #422800 2px 2px 0 0;
+    transform: translate(2px, 2px);
+}
+
+/* Priority box styling */
+.priority-container {
+    margin-top: 45px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.pink {
+    background-color: #ffdbdb;
+}
+
+.lb {
+    background-color: #d2fafd;
+}
+
+.green {
+    background-color: #c9ffc7;
+}
+
+.mr {
+    margin-right: 50px;
+}
+
+.mt {
+    margin-top: 24px;
+}
+
+.mb {
+    margin-bottom: 20px;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    margin-left: 50px;
+    height: 600px;
+    width: 375px;
+    border-radius: 15%;
+    position: relative;
+    font-family: "Nerko One", cursive;
+    font-size: 25px;
+}
+
+.box h1 {
+    transition: font-size 1s ease, text-shadow 1s ease;
+}
+
+.box h1:hover {
+    font-size: 28px; /* Increase font size on hover */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Add shadow */
+}
+
+.abs {
+    position: absolute;
+}
+
+.task-list {
+    padding-left: 20px;
+    margin-top: 70px; /* Space above the list */
+}
+
+.task-list li {
+    margin-top: 28px;
+    margin-bottom: 8px;
+    font-size: 20px;
+    color: #000;
+    font-size: 30px;
+}
+
+.actions {
+    padding: 10px;
+}
+
+/* Responsive styles */
+@media (min-width: 425px) {
+    .heading {
+        font-size: 20px; /* Larger font size for larger screens */
+    }
+
+    .start btn {
+        font-size: 18px;
+        padding: 10px 20px;
+        margin-left: 80px;
+    }
+
+    .priority-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .box {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (min-width: 768px) {
+    .heading {
+        font-size: 60px; /* Larger font size for larger screens */
+    }
+
+    .start {
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+
+    .priority-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .box {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .heading {
+        font-size: 70px; /* Larger font size for extra-large screens */
+    }
+
+    .start {
+        font-size: 20px;
+        padding: 12px 24px;
+    }
+}
